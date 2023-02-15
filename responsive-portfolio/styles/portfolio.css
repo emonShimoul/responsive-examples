@@ -208,7 +208,12 @@ input {
 /* Responsive styles */
 
 @media screen and (max-width:577px) {
+    .header {
+        background-image: none;
+    }
 
+    nav,
+    .banner,
     .skills-container,
     .resume-content,
     .about-info-container,
@@ -216,6 +221,25 @@ input {
         flex-direction: column;
         gap: 20px;
         padding: 10px 20px;
+    }
+
+    .banner {
+        margin: 0 20px;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+        padding-left: 20px;
+    }
+
+    nav li {
+        margin-left: 0;
     }
 
     .about,
@@ -238,7 +262,8 @@ input {
         gap: 10px;
     }
 
-    .contact {
+    .contact,
+    .banner {
         flex-direction: column;
     }
 
@@ -248,11 +273,13 @@ input {
         padding: 0 0 0 5px;
     }
 
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
     .resume-content {
         padding: 10px 20px;
     }
-}
-
-.hide {
-    display: none;
 }
